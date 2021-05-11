@@ -2,7 +2,7 @@
 
 This README.md file has been worked on under the guidance of professor Antonis Gkortzis 
 
-visit for a full and more concrete explanation on how a smiliar project can run.
+visit the highlighted url for a full and more concrete explanation on how a smiliar project can work and run.
 https://github.com/AntonisGkortzis
 
 # HundoP
@@ -31,17 +31,23 @@ Next step:
 
 fork this directory and clone it in your local computer using the command:
 
+```
 git clone
+```
 
 Then open Git-Bash or Terminal depending on if you have mac or windows and execute the following command in the repository root directory in order to build all modules:
 
-mvn pachkage
+```
+mvn package
+```
 
 This command generates a seperate jar file in each module's corresponding target (module/target) directory.
 
 Next step is typing in the command:
 
-mvn clean install 
+ ```
+mvn clean install
+```
 
 Apache Maven is a popular build tool, that takes your project’s Java source code, compiles it, tests it and converts it into an executable Java program: either a .jar or a .war file. mvn clean install command does exactly that. You are using the clean command, which will delete all previously compiled Java sources and resources (like .properties) in your project. Your build will start from a clean slate.Install will then compile, test & package your Java project and even install/copy your built .jar/.war file into your local Maven repository.
 reference: https://www.marcobehler.com/guides/mvn-clean-install-a-short-guide-to-maven

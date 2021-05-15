@@ -27,7 +27,7 @@ In order to be able to run this on your local computer, firstly you will need to
 :Git bash (for windows)
 :Terminal (already installed in Mac)
 
-Next step:
+# Configuration
 
 fork this directory and clone it in your local computer using the command:
 
@@ -51,6 +51,13 @@ mvn clean install
 
 Apache Maven is a popular build tool, that takes your project’s Java source code, compiles it, tests it and converts it into an executable Java program: either a .jar or a .war file. mvn clean install command does exactly that. You are using the clean command, which will delete all previously compiled Java sources and resources (like .properties) in your project. Your build will start from a clean slate.Install will then compile, test & package your Java project and even install/copy your built .jar/.war file into your local Maven repository.
 reference: https://www.marcobehler.com/guides/mvn-clean-install-a-short-guide-to-maven
+
+## Built With
+
+* [Eclipse](//https://www.eclipse.org/) - The Editor used
+* [Maven](https://maven.apache.org/) - Dependency Management
+* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+
 
 
 

@@ -49,6 +49,42 @@ Next step is typing in the command:
 mvn clean install
 ```
 
+### gradeshistogram
+This module has no dependencies and thus it requires only the definition of the class that is the main entry point of the system (the class that contains the main method). 
+```
+<plugin>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<configuration>
+					<archive>
+						<manifest>
+						  <classpathPrefix>lib/</classpathPrefix>
+							<addClasspath>true</addClasspath>
+						<!-- replace this with the class that contains the main method. It requires also the package name if exists. -->
+							<mainClass>gradeshistogram.HistogramGenerator</mainClass> 
+						</manifest>
+					</archive>
+					<descriptorRefs>
+						<descriptorRef>jar-with-dependencies</descriptorRef>
+					</descriptorRefs>
+				</configuration>
+				<executions>
+					<execution>
+						<id>make-assembly</id>
+						<phase>package</phase>
+						<goals>
+							<goal>single</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+```
+
+The produced jar is located in the target directory and can be executed as following:
+```
+java -jar gradeshistogram/target/HistogramGenerator0.0.1-SNAPSHOT.jar
+
+
+
 Apache Maven is a popular build tool, that takes your project’s Java source code, compiles it, tests it and converts it into an executable Java program: either a .jar or a .war file. mvn clean install command does exactly that. You are using the clean command, which will delete all previously compiled Java sources and resources (like .properties) in your project. Your build will start from a clean slate.Install will then compile, test & package your Java project and even install/copy your built .jar/.war file into your local Maven repository.
 reference: https://www.marcobehler.com/guides/mvn-clean-install-a-short-guide-to-maven
 

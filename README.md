@@ -49,6 +49,12 @@ Next step is typing in the command:
 mvn clean install
 ```
 
+## General knowledge
+
+Apache Maven is a popular build tool, that takes your project’s Java source code, compiles it, tests it and converts it into an executable Java program: either a .jar or a .war file. mvn clean install command does exactly that. You are using the clean command, which will delete all previously compiled Java sources and resources (like .properties) in your project. Your build will start from a clean slate.Install will then compile, test & package your Java project and even install/copy your built .jar/.war file into your local Maven repository.
+reference: https://www.marcobehler.com/guides/mvn-clean-install-a-short-guide-to-maven
+
+
 ### gradeshistogram
 This module has no dependencies and thus it requires only the definition of the class that is the main entry point of the system (the class that contains the main method). 
 ```
@@ -82,11 +88,8 @@ This module has no dependencies and thus it requires only the definition of the 
 The produced jar is located in the target directory and can be executed as following:
 ```
 java -jar gradeshistogram/target/HistogramGenerator0.0.1-SNAPSHOT.jar
+```
 
-
-
-Apache Maven is a popular build tool, that takes your project’s Java source code, compiles it, tests it and converts it into an executable Java program: either a .jar or a .war file. mvn clean install command does exactly that. You are using the clean command, which will delete all previously compiled Java sources and resources (like .properties) in your project. Your build will start from a clean slate.Install will then compile, test & package your Java project and even install/copy your built .jar/.war file into your local Maven repository.
-reference: https://www.marcobehler.com/guides/mvn-clean-install-a-short-guide-to-maven
 
 ## Built With
 

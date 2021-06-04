@@ -18,15 +18,22 @@ grades and generates its histogram.
 
 This repository consists of a parent Maven project and a child (module) Maven project, that handle the dependencies in a different way.
 
-# Prerequisites
+# Build and Run
 
 In order to be able to run this on your local computer, firstly you will need to download the following:
 
+```
 :Eclipse
+```
+```
 :Apache Maven
-:Git bash (for windows)
+```
+```
+:Git Bash (Windows)
+```
+```
 :Terminal (already installed in Mac)
-
+```
 # Configuration
 
 fork this directory and clone it in your local computer using the command:
@@ -45,7 +52,7 @@ This command generates a seperate jar file in each module's corresponding target
 
 Next step is typing in the command:
 
- ```
+```
 mvn clean install
 ```
 
@@ -56,7 +63,7 @@ reference: https://www.marcobehler.com/guides/mvn-clean-install-a-short-guide-to
 
 
 ### gradeshistogram
-This module has no dependencies and thus it requires only the definition of the class that is the main entry point of the system (the class that contains the main method). 
+This module has no dependencies and thus it requires only the definition of the class that is the main entry point of the system (the class that contains the main method). This is the reason why we add : <mainClass>gradeshistogram.HistogramGenerator</mainClass> 
 ```
 <plugin>
 				<artifactId>maven-assembly-plugin</artifactId>
@@ -87,7 +94,8 @@ This module has no dependencies and thus it requires only the definition of the 
 
 The produced jar is located in the target directory and can be executed as following:
 ```
-java -jar gradeshistogram/target/HistogramGenerator0.0.1-SNAPSHOT.jar
+java -jar gradeshistogram-0.0.1-SNAPSHOT.jar C:\Users\30694\Desktop\grades.txt
+
 ```
 
 
@@ -95,8 +103,4 @@ java -jar gradeshistogram/target/HistogramGenerator0.0.1-SNAPSHOT.jar
 
 * [Eclipse](//https://www.eclipse.org/) - The Editor used
 * [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-
-
 

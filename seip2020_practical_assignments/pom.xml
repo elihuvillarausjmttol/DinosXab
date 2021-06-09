@@ -4,7 +4,7 @@
   <artifactId>seip2020_practical_assignments</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
-  <name>HonduP Histogram</name>
+  <name>HonduP seip2020_practical_assignments</name>
   <description>Project dedicated to the needs of SEIP course.</description>
   <properties> 
   	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

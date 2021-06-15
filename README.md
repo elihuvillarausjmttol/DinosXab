@@ -103,3 +103,7 @@ java -jar gradeshistogram-0.0.1-SNAPSHOT.jar C:\Users\30694\Desktop\grades.txt
 
 * [Eclipse](//https://www.eclipse.org/) - The Editor used
 * [Maven](https://maven.apache.org/) - Dependency Management
+<<<<<<< HEAD
+=======
+
+>>>>>>> e561beda504d2918b159f727a646bebc991675a8

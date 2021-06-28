@@ -39,8 +39,6 @@ public class ArithmeticOperations {
 		} else if (x <= Integer.MAX_VALUE/y) {
 			return x*y;	
 		} else if (x == 0 || y == 0) {
-			return 0;	
-		} else if (x == 0 && y == 0) {
 			return 0;		
 		} else {
 			throw new IllegalArgumentException("The product does not fit in an Integer variable");		

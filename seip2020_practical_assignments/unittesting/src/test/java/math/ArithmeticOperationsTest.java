@@ -1,6 +1,7 @@
 package math;
 
 import org.junit.Test;
+import org.junit.Assert;
 import org.junit.Rule;
 import org.junit.rules.ExpectedException;
 
@@ -59,6 +60,17 @@ public class ArithmeticOperationsTest {
 		thrown.expect(IllegalArgumentException.class);
 		thrown.expectMessage("x & y should be >= 0");
 		kickstart.multiply(-5, -1);		
+	}
+	
+	/*
+     * A unit test that throws an exception 
+     * for multiplication of 2 arguments, one containing zero and
+     * the other containing a positive number.
+     */
+	@Test
+	public void testShouldReturnZero2() {
+		
+		Assert.assertEquals(0, kickstart.multiply(0, 2));	
 	}
 	
 	/*

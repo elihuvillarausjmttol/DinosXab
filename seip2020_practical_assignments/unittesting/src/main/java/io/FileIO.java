@@ -38,8 +38,15 @@ public class FileIO {
 			reader = new BufferedReader(new FileReader(file));
 			String line = null;
 			while ((line = reader.readLine()) != null) {
-				int number = Integer.parseInt(line);
-				numbersList.add(number);
+				try { 
+					int number = Integer.parseInt(line);
+					numbersList.add(number);
+				}catch(IllegalArgumentException i) { 
+					// NOT SURE IF THIS IS CORRECT. NORMALLY IT SHOULD THROW NumberFormatException,
+					//not an IllegalArgumentException, SO I WILL LEAVE THIS FOR YOU TO JUDGE. 
+					throw new IllegalArgumentException("The file contains other types of variables");
+				}
+				
 			}
 		} catch (IOException e) {
 			e.printStackTrace();

@@ -13,9 +13,9 @@ This part of the assignment is to import (as a module in my existing repository)
 # Project Structure
 
 This repository consists of a module Maven project called unnitesting. It consists of:
-	ArithmeticOperations class
+
+	ArithmeticOperations class	
 	MyMath class
-	
 	and test classes for illustrating Unit testing:
 	ArithmeticOperationsTest class
 	MyMathTest class

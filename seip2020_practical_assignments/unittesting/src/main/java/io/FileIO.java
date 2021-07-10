@@ -41,10 +41,8 @@ public class FileIO {
 				try { 
 					int number = Integer.parseInt(line);
 					numbersList.add(number);
-				}catch(IllegalArgumentException i) { 
-					// NOT SURE IF THIS IS CORRECT. NORMALLY IT SHOULD THROW NumberFormatException,
-					//not an IllegalArgumentException, SO I WILL LEAVE THIS FOR YOU TO JUDGE. 
-					throw new IllegalArgumentException("The file contains other types of variables");
+				}catch(NumberFormatException i) { 
+					throw new NumberFormatException("The file contains other types of variables");
 				}
 				
 			}

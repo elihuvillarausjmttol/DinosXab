@@ -57,7 +57,7 @@ public class FileIOTest {
 	@Test 
 	public void testReadFileContainsInvalidEntries() {
 		
-		thrown.expect(IllegalArgumentException.class);
+		thrown.expect(NumberFormatException.class);
 		thrown.expectMessage("The file contains other types of variables");
 		fileio.readFile("src/test/resources/NotOnly.txt");		
 	}

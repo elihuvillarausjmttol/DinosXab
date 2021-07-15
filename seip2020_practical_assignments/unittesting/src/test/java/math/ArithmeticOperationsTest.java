@@ -110,5 +110,30 @@ public class ArithmeticOperationsTest {
 		kickstart.multiply(Integer.MAX_VALUE, 100);
 	}
 	
+	/*
+	 * The following test method should work for x = 0.
+	 */
+	@Test
+	public void testShouldGiveOutputZeroforx() {
+		Assert.assertEquals(0, kickstart.multiply(0,2));
+		
+	}
+	/*
+	 * The following test method should work for y = 0.
+	 */
+	@Test
+	public void testShouldGiveOutputZerofory() {
+		Assert.assertEquals(0, kickstart.multiply(2,0));
+		
+	}
+	
+	/*
+	 * The following test method should work for x smaller than max value stored in an int.
+	 */
+	@Test
+	public void testShouldGiveNormalOutput() {
+		Assert.assertEquals(6, kickstart.multiply(2,3));
+		
+	}
 
 }	

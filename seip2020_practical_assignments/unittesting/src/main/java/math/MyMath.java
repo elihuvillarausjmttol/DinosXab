@@ -29,9 +29,6 @@ public class MyMath {
 			if (n<2) {
 				throw new IllegalArgumentException("Number should be 2 or greater");	
 			}
-			if (n <= 1) 
-	            return false; 
-	  
 	        // Check from 2 to n-1 
 	        for (int i = 2; i < n; i++) 
 	            if (n % i == 0) 

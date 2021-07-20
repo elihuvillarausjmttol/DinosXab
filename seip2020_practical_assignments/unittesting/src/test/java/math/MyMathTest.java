@@ -1,5 +1,6 @@
 package math;
 
+import org.junit.Assert;
 import org.junit.Test;
 
 /**
@@ -27,7 +28,18 @@ public class MyMathTest {
 	public void testShouldThrowExceptionForNumberSmallerThan2() {
 	mm.isPrime(1); 
 	}
-	
-	
-	
+	/*
+	 * The following test method should work for normal numbers in range.
+	 */
+	@Test
+	public void testShouldGiveOutputFalse() {
+		Assert.assertFalse(mm.isPrime(15));
+	}
+	/*
+	 * The following test method should work for normal numbers in range.
+	 */
+	@Test
+	public void testShouldGiveOutputTrue() {
+		Assert.assertTrue(mm.isPrime(11));
+	}
 }

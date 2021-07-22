@@ -1,3 +1,7 @@
+
+
+[![Build Status](https://travis-ci.com/DinosXa/HundoP.svg?token=PNYnGyYswdFUps8wxmnG&branch=master)](https://travis-ci.com/DinosXa/HundoP)
+
 # DISCLAIMER
 
 This README.md file has been worked on under the guidance of professor Antonis Gkortzis 

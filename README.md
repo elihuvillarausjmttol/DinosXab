@@ -22,6 +22,13 @@ grades and generates its histogram.
 
 This repository consists of a parent Maven project and a child (module) Maven project, that handle the dependencies in a different way.
 
+# Requirements
+
+This project requires:
+- Java JDK [version 1.8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) (or later) and
+- Maven [3.3](https://maven.apache.org/download.cgi) (or later)
+
+
 # Build and Run
 
 In order to be able to run this on your local computer, firstly you will need to download the following:
@@ -69,7 +76,7 @@ reference: https://www.marcobehler.com/guides/mvn-clean-install-a-short-guide-to
 ### gradeshistogram
 This module has no dependencies and thus it requires only the definition of the class that is the main entry point of the system (the class that contains the main method). This is the reason why we add : <mainClass>gradeshistogram.HistogramGenerator</mainClass> 
 ```
-<plugin>
+                <plugin>
 				<artifactId>maven-assembly-plugin</artifactId>
 				<configuration>
 					<archive>
@@ -102,6 +109,26 @@ java -jar gradeshistogram-0.0.1-SNAPSHOT.jar C:\Users\30694\Desktop\grades.txt
 
 ```
 
+### unittest
+
+unittest file is Java project that helps illustrate/demonstrate Unit testing methods for the requirements of the SEIP course. It uses Maven in order to automate build processes.
+
+```
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+    	<groupId>gr.aueb.dmst.Dinos</groupId>
+    	<artifactId>seip2020_practical_assignments</artifactId>
+   		 <version>0.0.1-SNAPSHOT</version>
+  	</parent>
+	<!-- Replace the following values with your own -->
+	<artifactId>unittesting</artifactId>
+	<name>HonduP Unittesting</name>
+	<description>A project for practicing and familiarizing Unit Testing and continuous integration for the SEIP course.</description>	
+</project>
+```
 
 ## Built With
 

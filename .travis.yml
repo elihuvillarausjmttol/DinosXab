@@ -6,7 +6,7 @@ jdk:
 branches:
   only:
   - master
-  - development
+  - developer
 
 before_script: 
   - cd seip2020_practical_assignments  # enter Maven root directory

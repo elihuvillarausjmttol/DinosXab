@@ -20,7 +20,7 @@ grades and generates its histogram.
 
 # Project Structure
 
-This repository consists of a parent Maven project and a child (module) Maven project, that handle the dependencies in a different way.
+This repository consists of a parent Maven project and 2 (module) Maven projects one is gradeshistogram and the other is unittesting.
 
 # Requirements
 
@@ -65,6 +65,10 @@ Next step is typing in the command:
 
 ```
 mvn clean install
+```
+
+```
+mvn clean package jacoco:report
 ```
 
 ## General knowledge

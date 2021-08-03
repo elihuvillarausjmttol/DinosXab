@@ -1,6 +1,5 @@
 
-
-[![Build Status](https://travis-ci.com/DinosXa/HundoP.svg?token=PNYnGyYswdFUps8wxmnG&branch=master)](https://travis-ci.com/DinosXa/HundoP)
+[![Build Status](https://travis-ci.com/DinosXa/HundoP.svg?token=PNYnGyYswdFUps8wxmnG&branch=developer)](https://travis-ci.com/DinosXa/HundoP)
 
 # DISCLAIMER
 

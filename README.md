@@ -1,9 +1,7 @@
 
 [![Build Status](https://travis-ci.com/DinosXa/HundoP.svg?token=PNYnGyYswdFUps8wxmnG&branch=developer)](https://travis-ci.com/DinosXa/HundoP)
 
-# DISCLAIMER
-
-This README.md file has been worked on under the guidance of professor Antonis Gkortzis 
+# Credits
 
 visit the highlighted url for a full and more concrete explanation on how a smiliar project can work and run.
 https://github.com/AntonisGkortzis

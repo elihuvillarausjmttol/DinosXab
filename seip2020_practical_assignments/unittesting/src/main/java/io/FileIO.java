@@ -41,10 +41,7 @@ public class FileIO {
 				try { 
 					int number = Integer.parseInt(line);
 					numbersList.add(number);
-				}catch(NumberFormatException i) { 
-					throw new NumberFormatException("The file contains other types of variables");
-				}
-				
+				}catch(NumberFormatException i) {}  				
 			}
 		} catch (IOException e) {
 			e.printStackTrace();

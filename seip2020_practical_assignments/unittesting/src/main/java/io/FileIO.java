@@ -41,7 +41,7 @@ public class FileIO {
 				try { 
 					int number = Integer.parseInt(line);
 					numbersList.add(number);
-				}catch(NumberFormatException i) {}  				
+				}catch(NumberFormatException i) { }  				
 			}
 		} catch (IOException e) {
 			e.printStackTrace();

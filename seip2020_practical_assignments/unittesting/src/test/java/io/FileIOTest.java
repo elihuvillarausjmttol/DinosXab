@@ -50,17 +50,18 @@ public class FileIOTest {
 		fileio.readFile("src/test/resources/Zero.txt");		
 	}
 	/*
-     * A unit test that throws an exception 
-     * for a file that contains not only integers but different kind
+     * A unit test that should return ignore only integer variables
+     * for a file that contain different kind
      * of variables (int,double,string).
      */
 	@Test 
-	public void testReadFileContainsInvalidEntries() {
+	public void testReadFileContainsInvalidEntries() {	
 		
-		thrown.expect(NumberFormatException.class);
-		thrown.expectMessage("The file contains other types of variables");
-		fileio.readFile("src/test/resources/NotOnly.txt");		
+		int[] expectedNumbers = new int[] {
+				1,2,3,5};
+		String validInputFilepath = resourcesPath.concat("NotOnly.txt");
+		
+		Assert.assertArrayEquals(expectedNumbers, fileio.readFile(validInputFilepath));
 	}
-	
 
 }

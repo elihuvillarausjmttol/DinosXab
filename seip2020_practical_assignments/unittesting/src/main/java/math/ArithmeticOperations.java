@@ -19,7 +19,6 @@ public class ArithmeticOperations {
 	 */
 	public double divide(double numerator, double denominator) {
 		if (denominator == 0) throw new ArithmeticException("Cannot divide with zero");
-		if (numerator/denominator > Double.MAX_VALUE || numerator/denominator < (-Double.MAX_VALUE) ) throw new ArithmeticException("The numbers Exceed Limits");
 			
 		return numerator/denominator;
 	}

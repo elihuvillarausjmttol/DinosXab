@@ -25,28 +25,15 @@ public class ArithmeticOperationsTest {
 	public void testShouldThrowExceptionForZeroDenominator() {
 	kickstart.divide(5, 0); 	
 	}	
-	
 	/*
      * A unit test that throws an exception 
-     * for a really big numerator in order not to distort
-     * the rules concerning division.
+     * for Numerator and Denominator with the value of 0.
      */
 	@Test(expected = ArithmeticException.class)
-	public void testShouldThrowExceptionForBigPositiveNumbers() {
-	kickstart.divide(Double.MAX_VALUE, 0.001); 	
+	public void testShouldThrowExceptionForZeroDenomAndNum() {
+	kickstart.divide(0, 0); 	
 	}
-	
-	/*
-     * A unit test that throws an exception 
-     * for a really small numerator in order to not distort
-     * the given rules of the devision.
-     */
-	@Test(expected = ArithmeticException.class)
-	public void testShouldThrowExceptionForBigNegativeNumbers() {
-	kickstart.divide(-Double.MAX_VALUE, 0.001); 	
-	}	
-	
-	
+		
 	@Rule
 	public ExpectedException thrown = ExpectedException.none();
 	

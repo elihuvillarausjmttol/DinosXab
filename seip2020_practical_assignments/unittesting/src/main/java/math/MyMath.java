@@ -1,14 +1,16 @@
 package math;
 
 /**
- * A class that contains a method called factorial.
- * This method illustrates the way to calculate the factorial
+ * A class that contains 2 methods for performing simple operations in math.
+ * First method is called factorial and second is called isPrime
+ * 
  * of numbers ranging from 0 to 12, using a loop (not recursion).
  */
 public class MyMath {
 		
 		/*
 		 * A method that calculates factorial of numbers ranging from 0 to 12.
+		 * gives an IllegalArgumentException if criteria hasn't been met
 		 */
 		public int factorial(int n) {
 			
@@ -24,6 +26,7 @@ public class MyMath {
 		
 		/*
 		 * A method that checks if a number >=2 is a prime number
+		 * gives an IllegalArgumentException if criteria hasn't been met
 		 */
 		public boolean isPrime(int n) {
 			if (n<2) {

@@ -5,15 +5,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Class ArrayOperations consisting of a method called findPrimesInFile 
- * that iterates in an array of numbers and returns a new array that 
- * contains only prime numbers. Furthermore, the method uses FileIO to read a 
- * file with numbers in the filepath location and the MyMath (to determine if a number is prime or not)
+ * Class ArrayOperations consisting of a method called findPrimesInFile to illustrate 
+ * the isPrime method created in the class MyMath.
  */
 
 public class ArrayOperations {
 	
-	
+	/*
+	 * a method that iterates in an array of numbers and returns a new array that 
+	 * contains only prime numbers. Furthermore, the method uses FileIO to read a 
+	 * file with numbers in the filepath location and the MyMath (to determine if a number is prime or not).
+	 */
 	public int[] findPrimesInFile(FileIO fileIo, String filepath, MyMath myMath) {
 		int[] numbers = fileIo.readFile(filepath);
 		List<Integer> PrimeNumbers = new ArrayList<>();

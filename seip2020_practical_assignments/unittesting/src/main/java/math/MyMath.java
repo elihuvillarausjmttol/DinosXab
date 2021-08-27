@@ -8,7 +8,7 @@ package math;
  */
 public class MyMath {
 		
-		/*
+		/**
 		 * A method that calculates factorial of numbers ranging from 0 to 12.
 		 * gives an IllegalArgumentException if criteria hasn't been met
 		 */
@@ -24,7 +24,7 @@ public class MyMath {
 			  return result;   
 		}
 		
-		/*
+		/**
 		 * A method that checks if a number >=2 is a prime number
 		 * gives an IllegalArgumentException if criteria hasn't been met
 		 */

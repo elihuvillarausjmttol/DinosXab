@@ -11,7 +11,7 @@ import java.util.List;
 
 public class ArrayOperations {
 	
-	/*
+	/**
 	 * a method that iterates in an array of numbers and returns a new array that 
 	 * contains only prime numbers. Furthermore, the method uses FileIO to read a 
 	 * file with numbers in the filepath location and the MyMath (to determine if a number is prime or not).

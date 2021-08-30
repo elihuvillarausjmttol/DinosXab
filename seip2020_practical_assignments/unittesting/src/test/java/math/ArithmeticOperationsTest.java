@@ -26,6 +26,16 @@ public class ArithmeticOperationsTest {
 	kickstart.divide(5, 0); 	
 	}	
 	/*
+     * A unit test that should return proper output. Test fails if criteria doesn't match the 0.11 margin of error. 
+     * 
+     */
+	@Test
+	public void divideReturnCorrectOutput() {
+		
+		Assert.assertEquals(2.1, kickstart.divide(4.0, 2.0), 0.11);	
+	}
+	
+	/*
      * A unit test that throws an exception 
      * for Numerator and Denominator with the value of 0.
      */

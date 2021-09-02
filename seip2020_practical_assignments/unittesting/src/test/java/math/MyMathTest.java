@@ -22,6 +22,14 @@ public class MyMathTest {
 	}
 	/*
 	 * The following test method throws an exception if
+	 *  the argument passed in the factorial method is greater than 12.
+	 */
+	@Test(expected = IllegalArgumentException.class)
+	public void testShouldThrowExceptionForPositiveNumber() {
+	mm.factorial(13); 
+	}
+	/*
+	 * The following test method throws an exception if
 	 *  the argument passed in the isPrime method is smaller than 2.
 	 */
 	@Test(expected = IllegalArgumentException.class)
